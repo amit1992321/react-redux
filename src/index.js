@@ -10,7 +10,7 @@ import App from './component/App' ;
 import *  as serviceWorker from './serviceWorker';
 import { render } from 'react-dom'
 // import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+//import { createStore } from 'redux'
 //import rootReducer from './reducers'
 // import App from './components/App'
 
@@ -23,4 +23,4 @@ render(
   </Provider>,
   document.getElementById('root')
 );
-serviceWorker();
+serviceWorker.register();
