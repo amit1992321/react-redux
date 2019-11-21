@@ -10,12 +10,12 @@ import App from './component/App' ;
 import *  as serviceWorker from './serviceWorker';
 import { render } from 'react-dom'
 // import { Provider } from 'react-redux'
-//import { createStore } from 'redux'
-//import rootReducer from './reducers'
+import { createStore } from 'redux'
+import rootReducer from './reducers/rootReducer'
 // import App from './components/App'
 
 
-//const store = createStore(rootReducer)
+const store = createStore(rootReducer)
 
 render(
   <Provider store={configureStore()}>
